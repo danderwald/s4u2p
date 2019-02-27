@@ -52,8 +52,6 @@ setup (
     ext_modules = [
         Extension(
             "s4u2p",
-            extra_link_args = link_args,
-            extra_compile_args = compile_args,
             sources = [
                 "src/s4u2p.c",
                 "src/base64.c",
