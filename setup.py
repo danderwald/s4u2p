@@ -23,9 +23,6 @@ def getoutput(cmd_and_args):
         raise subprocess.CalledProcessError(retcode, cmd_and_args[0], output=out)
     return out
 
-link_args = getoutput("krb5-config --libs gssapi".split()).split()
-compile_args = getoutput("krb5-config --cflags gssapi".split()).split()
-
 #compile_args.append("-Werror=missing-declarations")
 #compile_args.append("-Werror=implicit-function-declaration")
 
